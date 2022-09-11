@@ -11,7 +11,7 @@
 # 修改默认IP
 sed -i 's/192.168.1.1/10.32.0.1/g' package/base-files/files/bin/config_generate
 # 修改网关
-sed -i 's/192.168.$((addr_offset++)).1/10.32.0.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.$((addr_offset++)).1/10.32.$((addr_offset++)).1/g' package/base-files/files/bin/config_generate
 # 修改默认插件
 sed -i 's/dnsmasq-full firewall iptables ppp ppp-mod-pppoe \
 	block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun \
