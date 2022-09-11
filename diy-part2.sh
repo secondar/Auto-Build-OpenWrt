@@ -9,36 +9,36 @@
 #============================================================
 
 # 修改默认IP
-#sed -i 's/192.168.1.1/10.32.0.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.32.0.1/g' package/base-files/files/bin/config_generate
 # 修改网关
-#sed -i 's/192.168.1.1/10.32.0.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.32.0.1/g' package/base-files/files/bin/config_generate
 
 # 删除默认密码
 #sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-default-settings
 
 # 修改默认主题
-#sed -i 's/luci-theme-bootstrap/luci-theme-edge/g' ./feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-edge/g' ./feeds/luci/collections/luci/Makefile
 
 # 取消bootstrap为默认主题
 #sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 
 # 修改主机名称
-#sed -i 's/OpenWrt/HIWIFI-B70/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/Yuos-Wrt/g' package/base-files/files/bin/config_generate
 
 # 修改版本号
 sed -i "s/OpenWrt /yuos-bit build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # 修改默认wifi名称ssid为tymishop
-#sed -i 's/ssid=OpenWrt/ssid=Yuos_$(cat /sys/class/ieee80211/${dev}/macaddress|awk -F ":" '{print $5""$6 }'| tr a-z A-Z)/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/ssid=OpenWrt/ssid=Xiaomi_$(cat /sys/class/ieee80211/${dev}/macaddress|awk -F ":" '{print $5""$6 }'| tr a-z A-Z)/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #开启MU-MIMO
-#sed -i 's/mu_beamformer=0/mu_beamformer=1/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/mu_beamformer=0/mu_beamformer=1/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #wifi加密方式，没有是none
-#sed -i 's/encryption=none/encryption=psk2/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/encryption=none/encryption=psk2/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #wifi密码
-#sed -i 's/key=15581822425/key=1234567890/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+sed -i 's/key=15581822425/key=1234567890/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 删除软件包
 rm -rf package/lean/luci-theme-argon
