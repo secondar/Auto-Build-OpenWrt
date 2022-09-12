@@ -21,7 +21,7 @@ sed -i 's/dnsmasq-full firewall iptables ppp ppp-mod-pppoe \
 	luci-app-accesscontrol luci-app-nlbwmon luci-app-turboacc luci-app-wol curl ca-certificates/firewall iptables ppp ppp-mod-pppoe \
 	block-mount coremark kmod-nf-nathelper kmod-nf-nathelper-extra kmod-ipt-raw kmod-tun \
 	iptables-mod-tproxy iptables-mod-extra ipset ip-full default-settings \
-	luci-app-nps luci-app-autoreboot luci-app-ssr-plus curl ca-certificates/g' include/target.mk
+	luci-app-autoreboot luci-app-ssr-plus curl ca-certificates/g' include/target.mk
 # 删除默认密码
 #sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-default-settings
 
