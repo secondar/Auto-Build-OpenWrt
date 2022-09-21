@@ -24,7 +24,7 @@ on:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/yuos-bit/lede
+  REPO_URL: https://github.com/secondar/lede
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Lean_LEDE_Xiaomi_4C.config
