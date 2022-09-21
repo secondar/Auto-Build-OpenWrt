@@ -34,6 +34,6 @@ echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 #git clone https://github.com/sirpdboy/luci-theme-opentopd package/molun/luci-theme-opentopd
 #git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/molun/luci-theme-infinityfreedom
 #git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/molun/luci-theme-edge
-#git clone -b master https://github.com/davinyue/luci-theme-edge package/molun/luci-theme-edge
+git clone -b master https://github.com/davinyue/luci-theme-edge package/molun/luci-theme-edge
 # 自定义模板
-git clone -b master https://github.com/secondar/luci-theme-edge.git package/molun/luci-theme-edge
+#git clone -b master https://github.com/secondar/luci-theme-edge.git package/molun/luci-theme-edge
